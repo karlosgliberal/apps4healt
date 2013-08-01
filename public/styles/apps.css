@@ -272,9 +272,6 @@ font-weight: bold;
 font-family: "Arial",sans-serif;
 }
 
-/*.i-error {
-	 border-color: #007FB3;
-}*/
 
 .a1error {
 
@@ -294,7 +291,7 @@ font-family: "Arial",sans-serif;
 }
 
 span.error, small.error {
-    background: none repeat scroll 0 0 #00BCFF;
+    background: none repeat scroll 0 0 #ccc;
     color: white;
     display: block;
     font-size: 0.75em;
