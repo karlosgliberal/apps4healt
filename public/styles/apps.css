@@ -69,12 +69,12 @@ font-size: 1.3em;
 	    padding: 65px;
 	    background: url("../img/bg-textura.png");
 }
-#proyecto-seccion {
+#proyecto-seccion, #inscripcion {
 	   background: url("../img/bg-textura.png");
 }
 
 
-#proyectos .button {
+#proyectos .button, #inscripcion .button{
   margin: 31px 0;
   text-transform: uppercase;
   border-radius: 5px;
@@ -208,7 +208,35 @@ padding-left: 10px;
 	 padding-top: 40px;
 }
 
-
 .ul-pre {
 	margin-bottom: 3px;
+}
+
+.formulario-i {
+
+}
+
+#inscripcion h2 {
+	color: #009FD9;
+	letter-spacing: 1px;
+}
+
+#inscripcion label {
+	color: #007FB3;
+	font-weight: 600;
+
+}
+
+.formulario-i {
+font-family: "Arial", sans-serif;
+
+}
+
+#inscripcion {
+padding: 70px;
+}
+
+
+#inscripcion .row {
+	background-color: #fff;
 }
