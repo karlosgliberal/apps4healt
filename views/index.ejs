@@ -1,0 +1,126 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Apps4Health</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <!-- build:css({.tmp,app}) styles/main.css -->
+        <link rel="stylesheet" href="bower_components/foundation/css/normalize.css">
+        <link rel="stylesheet" href="bower_components/foundation/css/foundation.css">
+        <link rel="stylesheet" href="bower_components/ng-grid/ng-grid.css">
+        <link rel="stylesheet" href="styles/apps.css">
+        <script src="bower_components/foundation/js/vendor/custom.modernizr.js"></script>
+        <script type="text/javascript" src="//use.typekit.net/mds3teh.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <!-- endbuild -->
+</head>
+<body ng-app="apps4healtApp">
+<style ng-bind-html-unsafe="style"></style>
+
+<div id="header"> 
+  <div class="row">
+    <nav class="top-bar" style="">
+      <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name">
+          <img src="/img/logo.png" alt="Apps4health">
+        </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+    <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+         
+          <li class=""><a href="/index.html">Inicio</a></li>
+      
+          <li class=""><a href="/index.html">¿Que es un hackathon social?</a></li>
+        
+          <li class=""><a href="/index.html">Apps4health</a></li>
+         
+          <li class=""><a href="/index.html">Faq</a></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+</div>
+
+<div ng-view="" id="ng-view" ng-animate="{enter: 'view-enter'}"></div>
+
+<div id="donde">
+<div class="row">
+  <div class="large-12"><h4 class="donde-cuando">Donde y cuando</h4></div>  
+  <div class="small-2 large-4 columns"><p class="t-donde">Sábado 28 de septiembre de 2013</p><p class="t-donde-mini">Horario: 10 a 22h</p></div>
+  <div class="small-4 large-4 columns"><p class="t-donde">Espacio Open. Antigua Fábrica de Artiach. <span class="t-donde-mini">Zorrozaurre, Bilbao</span></p>
+    <a href="#" data-dropdown="drop1">Como llegar</a>
+  <ul id="drop1" class="f-dropdown" data-dropdown-content>
+    <li><img src="http://lorempixel.com/300/300"></li>
+  </ul>
+  </div>
+  <div class="small-6 large-4 columns"><p class="t-donde">Nº participantes 60 personas</p></div>
+</div>
+</div>
+
+<div id="colaboradores">
+  <div class="row">
+    <div class="large-12"><h4>Colaboradores</h4></div>
+  </div>
+</div>
+
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+      <script src="bower_components/es5-shim/es5-shim.js"></script>
+      <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+   
+    <script>
+      document.write('<script src=' +
+      ('__proto__' in {} ? 'bower_components/foundation/js/vendor/jquery' : 'bower_components/foundation/js/vendor/jquery') +
+      '.js><\/script>')
+    </script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src='//www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+    <script type="text/javascript" src="https://cdn.firebase.com/v0/firebase-auth-client.js"></script> 
+    <script src="bower_components/angular/angular.js"></script>
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/directives/formulario.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/alta.js"></script>
+    <script src="scripts/controllers/users.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/modules.js -->
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-fire/angularFire.js"></script>
+    <script src="bower_components/ng-grid/ng-grid-2.0.7.min.js"></script>
+    <script src="bower_components/angular-flash/dist/angular-flash.min.js"></script>
+    <script src="bower_components/angular-google-staticmaps/angular-google-staticmaps.js"></script>
+    <!-- endbuild -->
+    <script>
+      $(function(){
+        $(document).foundation();
+      })
+    </script>
+</body>
+</html>

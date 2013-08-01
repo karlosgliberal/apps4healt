@@ -1,0 +1,130 @@
+
+	<div id="inscripcion">
+			<div class="row">
+				<div class="small-8">
+		    	<div flash-alert="success" ng-hide="movida" active-class="in" class="alert fade alert-box round" ng-animate="{show: 'view-enter', hide:'list-out'}">
+    				<span class="alert-message">{{flash.message}}</span>
+					</div>
+				</div>
+			</div>
+		  <div class="row">
+		    <div class="small-8">
+		      <div class="row">
+		        <div class="small-3 columns">
+		          <label for="right-label" class="right">Nombre y apellidos</label>
+		        </div>
+		        <div class="small-9 columns">
+		          <input type="text" id="right-label" ng-model="nombre" placeholder="Nombre y apellidos">
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		    <div class="row">
+		    <div class="small-8">
+		      <div class="row">
+		        <div class="small-3 columns">
+		          <label for="right-label" class="right">E-mail</label>
+		        </div>
+		        <div class="small-9 columns">
+		          <input type="text" id="right-label" ng-model="email" placeholder="e-mail">
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		      <div class="row">
+		    <div class="small-8">
+		      <div class="row">
+		        <div class="small-3 columns">
+		          <label for="right-label" class="right">Tlf</label>
+		        </div>
+		        <div class="small-9 columns">
+		          <input type="text" id="right-label" ng-model="telefono" placeholder="Télefono">
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		<div class="row">
+			<div class="small-8">
+			  <div class="small-3 columns">
+		          <label for="right-label" class="right">Necesitas alojamiento?</label>
+		     </div>
+		     <div class="small-9 columns">
+		         <label for="radio1"><input name="radio1" type="radio" id="radio1" style="" CHECKED ng-model="casaSi"><span class="custom radio checked"></span> Sí</label>
+     				 <label for="radio1"><input name="radio1" type="radio" id="radio1" style="" ng-model="casaNo"><span class="custom radio"></span> No</label>
+		  </div>
+		  
+		  </div>
+		</div>
+
+	<div class="row">
+		    <div class="small-8">
+		      <div class="row">
+		        <div class="small-3 columns">
+		          <label for="right-label" class="right">Si vienes de fuera de Bilbao, de Donde?</label>
+		        </div>
+		        <div class="small-9 columns">
+		          <input type="text" id="right-label" ng-model="procedencia" placeholder="Lugar de procedencia">
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+	</div>
+		 <div class="row">
+		    <div class="small-8">
+		      <div class="row">
+		        <div class="small-3 columns">
+		          <label for="right-label" class="right">Bio</label>
+		        </div>
+		        <div class="small-9 columns">
+		          <textarea ng-model="bio" placeholder="Una breve bio sobre tí"></textarea>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		   <div class="row">
+		    <div class="small-8">
+		      <div class="row">
+		        <div class="small-3 columns">
+		          <label for="right-label" class="right">Proyecto seleccionado</label>
+		        </div>
+		        <div class="small-9 columns">
+		         <select id="customDropdown1" class="medium" ng-model="proyecto">
+			        <option DISABLED>Selecciona un proyecto</option>
+			        <option>Ghana</option>
+			        <option>Tailandia</option>
+			        <option>India</option>
+			        <option>Perú</option>
+			        <option>App libre</option>
+      			</select>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		  		 <div class="row">
+		    <div class="small-8">
+		      <div class="row">
+		        <div class="small-3 columns">
+		          <label for="right-label" class="right">App libre</label>
+		        </div>
+		        <div class="small-9 columns">
+		          <textarea ng-model="appLibre" placeholder="Si vas a presentar una App libre pon una breve descripción sobre ella"></textarea>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="row">
+			  <div class="small-3 push-7 columns"><a href="" ng-click="addMessage()" class="button">Enviar</a></div>
+			  <div class="small-7 pull-3 columns">
+			  </div>
+</div>
+
+<div class="large-12 columns">
+      <div class="row">
+      	<h4>texto</h4>
+      	<ul ng-controller="MainCtrl">
+  			<li ng-repeat="item in messages">{{item.text}}: <a ng-click="delMessage(item.$id)" href="">{{item.mensaje}}</a></li>
+		</ul>
+    	<!-- Thumbnails -->
+      </div>
+    </div>
+    <button ng-click="flash()"> Flash</button>
