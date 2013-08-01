@@ -9,7 +9,7 @@
 			        <div class="small-3 columns">
 			          <label for="right-label" class="right">Nombre y apellidos</label>
 			        </div>
-			        <div class="small-9 columns" ng-class="{i-error: altaForm.nombre.$invalid}">
+			        <div class="small-9 columns" ng-class="{ierror: altaForm.nombre.$invalid}">
 			          <input type="text" name="nombre" ng-model="nombre" placeholder="Nombre y apellidos" required>
 			          <small class="error" ng-show="altaForm.nombre.$error.required">Requerido</small>
 			        </div>
@@ -22,7 +22,7 @@
 			        <div class="small-3 columns">
 			          <label for="right-label" class="right">E-mail</label>
 			        </div>
-			        <div class="small-9 columns" ng-class="{i-error: altaForm.email.$invalid}">
+			        <div class="small-9 columns" ng-class="{ierror: altaForm.email.$invalid}">
 			          <input type="email" name="email" ng-model="email" placeholder="e-mail" required>
 			         <small class="error"ng-show="altaForm.email.$error.required">Requerido</small>
 			         <small class="error" ng-show="altaForm.email.$error.email">No es un correo valido</small>
@@ -36,7 +36,7 @@
 			        <div class="small-3 columns">
 			          <label for="right-label" class="right">Tlf</label>
 			        </div>
-			        <div class="small-9 columns" ng-class="{i-error: altaForm.telefono.$invalid}">
+			        <div class="small-9 columns" ng-class="{ierror: altaForm.telefono.$invalid}">
 			          <input type="number" id="right-label" name="telefono" ng-model="telefono" placeholder="Télefono" required>
 			          <small class="error" ng-show="altaForm.telefono.$error.required">Requerido</small>
 			          <small class="error" ng-show="altaForm.telefono.$error.telefono">Tiene que ser un número</small>
