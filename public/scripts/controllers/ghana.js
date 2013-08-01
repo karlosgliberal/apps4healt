@@ -30,7 +30,7 @@ angular.module('apps4healtApp')
   	}
 
 		$scope.addMessage = function() {
-			console.log(name);
+			console.log($scope.casa);
 			/*
   		$scope.messages.add({
       	nombreApellidos: $scope.nombre, 
