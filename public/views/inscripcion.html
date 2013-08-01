@@ -1,8 +1,6 @@
-
+	<form name="altaForm">
 	<div id="inscripcion">
-		
-				<div class="small-8 push-1"><h2>Inscripción</h2></div>
-		
+		<div class="small-8 push-1"><h2>Inscripción</h2></div>
 		<div class="formulario-i">	
 		  <div class="row first">
 		    <div class="small-8 push-1">
@@ -10,8 +8,10 @@
 		        <div class="small-3 columns">
 		          <label for="right-label" class="right">Nombre y apellidos</label>
 		        </div>
-		        <div class="small-9 columns">
-		          <input type="text" id="right-label" ng-model="nombre" placeholder="Nombre y apellidos">
+		        <div class="small-9 columns" ng-class="{error: altaForm.nombre.$invalid}">
+		          <input type="text" name="nombre" ng-model="nombre" placeholder="Nombre y apellidos" required>
+		          <br>
+		          <span class="error" ng-show="altaForm.nombre.$error.required">Requerido</span><br>
 		        </div>
 		      </div>
 		    </div>
@@ -22,8 +22,10 @@
 		        <div class="small-3 columns">
 		          <label for="right-label" class="right">E-mail</label>
 		        </div>
-		        <div class="small-9 columns">
-		          <input type="text" id="right-label" ng-model="email" placeholder="e-mail">
+		        <div class="small-9 columns" ng-class="{error: altaForm.email.$invalid}">
+		          <input type="email" name="email" ng-model="email" placeholder="e-mail" required>
+		          <span class="error" ng-show="altaForm.email.$error.required">Requerido</span>
+		          <span class="error" ng-show="altaForm.email.$error.email">No es un correo valido</span>
 		        </div>
 		      </div>
 		    </div>
@@ -34,8 +36,10 @@
 		        <div class="small-3 columns">
 		          <label for="right-label" class="right">Tlf</label>
 		        </div>
-		        <div class="small-9 columns">
-		          <input type="text" id="right-label" ng-model="telefono" placeholder="Télefono">
+		        <div class="small-9 columns" ng-class="{error: altaForm.telefono.$invalid}">
+		          <input type="number" id="right-label" name="telefono" ng-model="telefono" placeholder="Télefono" required>
+		          <span class="error" ng-show="altaForm.telefono.$error.required">Requerido</span>
+		          <span class="error" ng-show="altaForm.telefono.$error.telefono">Tiene ques er un núnmero</span>
 		        </div>
 		      </div>
 		    </div>
@@ -46,8 +50,8 @@
 		          <label for="right-label" class="right">Necesitas alojamiento?</label>
 		     </div>
 		     <div class="small-9 columns">
-		         <label for="radio1"><input name="radio1" type="radio" id="radio1" style="" CHECKED ng-model="casaSi"><span class="custom radio checked"></span> Sí</label>
-     				 <label for="radio1"><input name="radio1" type="radio" id="radio1" style="" ng-model="casaNo"><span class="custom radio"></span> No</label>
+		         <label for="radio1"><input name="casa" type="radio" CHECKED ng-model="casa" value="no"><span class="custom radio checked"></span> Sí</label>
+     				 <label for="radio1"><input name="casa" type="radio" ng-model="casa" value="no"><span class="custom radio"></span> No</label>
 		  </div>
 		  
 		  </div>
@@ -116,4 +120,4 @@
 		</div>
 </div>
 </div>
-
+</form>
