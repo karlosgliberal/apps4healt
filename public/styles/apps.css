@@ -69,6 +69,9 @@ font-size: 1.3em;
 	    padding: 65px;
 	    background: url("../img/bg-textura.png");
 }
+#proyecto-seccion {
+	   background: url("../img/bg-textura.png");
+}
 
 
 #proyectos .button {
@@ -165,41 +168,47 @@ padding-top: 50px;
    line-height: 2.7em;	
 }
 
-#ng-view {
-  position:relative;
-  min-height:500px;
+
+#proyecto-seccion p {
+	color:#545454;
+	font-size: 1.3em;
+	padding-left: 10px;
 }
 
-.view-enter, .view-leave, .slide-enter, .slide-leave, .wave-enter, .wave-leave {
-  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s;
-  -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s;
-  -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s;
-  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s;
+
+#proyecto-seccion strong {
+color: #007FB3
 }
 
-#ng-view {
-  position:relative;
-  min-height:500px;
+#proyecto-seccion h1 {
+    color: #009FD9;
+    font-size: 3.5em;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    padding-left: 10px;
 }
 
-.view-enter {
-  opacity:0;
-  left:100px;
-  width:100%;
-  position:absolute;
-}
-.view-enter.view-enter-active {
-  left:0;
-  opacity:1;
+#proyecto-seccion h3.subheader {
+color: #00B7FF;
+padding-left: 10px;
 }
 
-.view-leave {
-  position:absolute;
-  left:0;
-  width:100%;
-  opacity:1;
+#proyecto-seccion img {
+  border: 8px solid #FFFFFF;
+  margin-bottom: 20px;
 }
-.view-leave.view-leave-active {
-  left:-100px;
-  opacity:0;
+
+.contenido li {
+  margin-left: 40px;
+  	color:#545454;
+	font-size: 1.3em;
+}
+
+.bread {
+	 padding-top: 40px;
+}
+
+
+.ul-pre {
+	margin-bottom: 3px;
 }
