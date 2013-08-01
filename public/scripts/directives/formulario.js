@@ -7,6 +7,5 @@ angular.module('inscripcion', [])
       replace: false,
       templateUrl: "views/inscripcion.html"
     };
-    
     // return the directive link function. (compile function not needed)
   });

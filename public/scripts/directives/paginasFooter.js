@@ -7,6 +7,5 @@ angular.module('footer', [])
       replace: false,
       templateUrl: "views/paginasFooter.html"
     };
-    
     // return the directive link function. (compile function not needed)
   });
