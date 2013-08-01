@@ -219,6 +219,7 @@ padding-left: 10px;
 #inscripcion h2 {
 	color: #009FD9;
 	letter-spacing: 1px;
+	  font-size: 2.8em;
 }
 
 #inscripcion label {
@@ -239,4 +240,8 @@ padding: 70px;
 
 #inscripcion .row {
 	background-color: #fff;
+}
+
+.first {
+	 padding-top: 60px;
 }
