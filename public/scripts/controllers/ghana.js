@@ -5,6 +5,11 @@ angular.module('apps4healtApp')
   	$scope.proyecto = 'Ghana';
  		$scope.casa = 'no'; 
  		$scope.libre = false;
+
+	  $scope.movida = function (){
+	    Correo.enviar({}, {id:'hola'});
+	  }
+
 		$scope.addMessage = function() {
 			var usuario = {
       	nombreApellidos: $scope.nombre, 
@@ -16,7 +21,7 @@ angular.module('apps4healtApp')
       	proyecto: 'Ghana',
       	appLibre: ($scope.libre) ? $scope.appLibre : '' 
     	};
-	    ServicioInscripcion.alta(usuario);
+	    ServicioInscripcion.alta({}, usuario);
 
 	    Correo.enviar(usuario, function (data){
 	    	console.log(data);
