@@ -48,7 +48,7 @@
 				  <div class="small-3 columns">
 			          <label for="right-label" class="right">Necesitas alojamiento?</label>
 			     </div>
-			     <div class="small-9 columns">
+			     <div class="small-9 columns" >
 			         <label for="radio1"><input name="casa" type="radio" CHECKED ng-model="casa" value="si"><span class="custom radio checked"></span> Sí</label>
 	     				 <label for="radio1"><input name="casa" type="radio" ng-model="casa" value="no"><span class="custom radio"></span> No</label>
 			  </div>
@@ -60,8 +60,9 @@
 			        <div class="small-3 columns">
 			          <label for="right-label" class="right">Si vienes de fuera de Bilbao, de Donde?</label>
 			        </div>
-			        <div class="small-9 columns">
-			          <input type="text" id="right-label" ng-model="procedencia" placeholder="Lugar de procedencia">
+			        <div class="small-9 columns" ng-class="{ierror: altaForm.lugar.$invalid}">
+			          <input type="text" id="right-label" name="lugar" ng-model="lugar" placeholder="Procedencia" required>
+			          <small class="error" ng-show="altaForm.lugar.$error.required">Requerido</small>
 			        </div>
 			      </div>
 			    </div>

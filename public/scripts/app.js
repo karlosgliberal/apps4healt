@@ -35,13 +35,9 @@ angular.module('apps4healtApp', ['firebase', 'ngGrid', 'inscripcion', 'footer', 
         templateUrl: 'views/hackathon.html',
         controller: 'MainCtrl'
       })
-      .when('/users', {
-        templateUrl: 'views/users.html',
-        controller: 'UsersCtrl'
-      })
-      .when('/alta', {
-        templateUrl: 'views/alta.html',
-        controller: 'AltaCtrl'
+      .when('/listado', {
+        templateUrl: 'views/listado.html',
+        controller: 'ListadoCtrl'
       })
       .otherwise({
         redirectTo: '/'

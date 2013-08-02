@@ -4,9 +4,7 @@ angular.module('FireServices', [])
         alta: function(usuario){
         		var url = 'https://interzonas.firebaseio.com/altas/';
         		var altas = angularFireCollection(new Firebase(url).limit(60));
-        		altas.add(usuario, function(dato, dato2){
-        					console.log(dato2);
-        		});
+        		altas.add(usuario);
             return "correcto";
         },
         sayGoodbye: function(text){
