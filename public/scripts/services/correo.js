@@ -4,7 +4,8 @@ angular.module('EnvioCorreoService',['ngResource']).
 	var Correo = $resource('http://localhost\\:4000/correo',{}, { 
       	enviar: {
           method: 'POST',
-          isArray: true
+          isArray: true,
+          params: {id:'jjj', hhh:'hggg'}
       	}
     	}); 
     	return Correo;
