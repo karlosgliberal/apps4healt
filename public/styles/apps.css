@@ -292,3 +292,7 @@ span.error, small.error {
     margin-bottom: 0.4em;
 
 }
+
+input[type="text"][disabled] {
+	background-color: #F3F3F3;
+}
