@@ -204,6 +204,10 @@ padding-left: 10px;
 	font-size: 1.3em;
 }
 
+.contenido {
+	   padding-bottom: 60px;
+}
+
 .bread {
 	 padding-top: 40px;
 }
@@ -283,4 +287,3 @@ span.error, small.error {
     margin-top: -1.3125em;
     padding: 0.375em 0.7em;
 }
-
