@@ -27,6 +27,10 @@ angular.module('apps4healtApp', ['firebase', 'ngGrid', 'inscripcion', 'footer', 
         templateUrl: 'views/faq.html',
         controller: 'MainCtrl'
       })
+      .when('/premios', {
+        templateUrl: 'views/premios.html',
+        controller: 'MainCtrl'
+      })
       .when('/apps4health', {
         templateUrl: 'views/apps4health.html',
         controller: 'MainCtrl'
