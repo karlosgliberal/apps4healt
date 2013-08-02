@@ -41,7 +41,7 @@ angular.module('apps4healtApp', ['firebase', 'ngGrid', 'inscripcion', 'footer', 
       })
       .when('/applibre', {
         templateUrl: 'views/applibre.html',
-        controller: 'AppLibreCtrl'
+        controller: 'ApplibreCtrl'
       })
       .otherwise({
         redirectTo: '/'

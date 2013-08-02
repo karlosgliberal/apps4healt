@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('apps4healtApp')
-  .controller('AppLibeCtrl', function ($scope, ServicioInscripcion) {
+  .controller('ApplibreCtrl', function ($scope, ServicioInscripcion) {
   	$scope.proyecto = 'App Libre';
  		$scope.casa = 'no'; 
  		$scope.libre = true;
