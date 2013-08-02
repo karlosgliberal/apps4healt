@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('apps4healtApp')
-  .controller('GhanaCtrl', function ($scope, angularFireCollection, angularFireAuth, flash) {
+  .controller('GhanaCtrl', function ($scope, angularFireCollection, angularFireAuth, flash, ServicioInscripcion) {
     var urlAuth = 'https://interzonas.firebaseio.com/';
     angularFireAuth.initialize(urlAuth, {
       scope: $scope,
@@ -11,6 +11,8 @@ angular.module('apps4healtApp')
         // Called whenever there is a change in authentication state.
         }
     });
+
+    alert(ServicioInscripcion.sayHello('movida'))
     $scope.login = function () {
       angularFireAuth.login("twitter", {remember: true});
     };
