@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('apps4healtApp')
-  .controller('GhanaCtrl', function ($scope, angularFireCollection, angularFireAuth, flash, ServicioInscripcion) {
+  .controller('GhanaCtrl', function ($scope, angularFireCollection, angularFireAuth, ServicioInscripcion) {
     var urlAuth = 'https://interzonas.firebaseio.com/';
     angularFireAuth.initialize(urlAuth, {
       scope: $scope,
@@ -12,7 +12,6 @@ angular.module('apps4healtApp')
         }
     });
 
-    alert(ServicioInscripcion.sayHello('movida'))
     $scope.login = function () {
       angularFireAuth.login("twitter", {remember: true});
     };
@@ -21,18 +20,22 @@ angular.module('apps4healtApp')
       angularFireAuth.logout();
     };
 
-    var url = 'https://interzonas.firebaseio.com/altas/';
-    var fb = new Firebase(url);
-		$scope.messages = angularFireCollection(new Firebase(url).limit(60));
-    $scope.movida =true;
-
-    $scope.flash = function(){
-    	$scope.movida = false;
-    	flash.success = 'Do it live!';
-  	}
-
+  	$scope.proyecto = 'Ghana';
+ 		$scope.casa = 'no'; 
+ 		$scope.libre = true;
 		$scope.addMessage = function() {
-			console.log($scope.casa);
+			var usuario = {
+      	nombreApellidos: $scope.nombre, 
+      	email: $scope.email,
+      	telefono: $scope.telefono,
+      	alojamiento: $scope.casa,
+      	bio: $scope.bio,
+      	proyecto: 'Ghana',
+      	appLibre: ($scope.libre) ? $scope.appLibre : '' 
+    	};
+
+	    ServicioInscripcion.alta(usuario);
+
 			/*
   		$scope.messages.add({
       	nombreApellidos: $scope.nombre, 

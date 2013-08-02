@@ -49,7 +49,7 @@
 			          <label for="right-label" class="right">Necesitas alojamiento?</label>
 			     </div>
 			     <div class="small-9 columns">
-			         <label for="radio1"><input name="casa" type="radio" CHECKED ng-model="casa" value="no"><span class="custom radio checked"></span> Sí</label>
+			         <label for="radio1"><input name="casa" type="radio" CHECKED ng-model="casa" value="si"><span class="custom radio checked"></span> Sí</label>
 	     				 <label for="radio1"><input name="casa" type="radio" ng-model="casa" value="no"><span class="custom radio"></span> No</label>
 			  </div>
 			  </div>
@@ -83,22 +83,15 @@
 			    <div class="small-8 push-1">
 			      <div class="row">
 			        <div class="small-3 columns">
-			          <label for="right-label" class="right">Proyecto seleccionado</label>
+			          <label for="right-label" class="right">Proyecto</label>
 			        </div>
 			        <div class="small-9 columns">
-			         <select id="customDropdown1" class="medium" ng-model="proyecto">
-				        <option DISABLED>Selecciona un proyecto</option>
-				        <option>Ghana</option>
-				        <option>Tailandia</option>
-				        <option>India</option>
-				        <option>Perú</option>
-				        <option>App libre</option>
-	      			</select>
+				        <input type="text" id="right-label" ng-model="proyecto" placeholder="{{proyecto}}" disabled>	
 			        </div>
 			      </div>
 			    </div>
 			  </div>
-			  		 <div class="row">
+			  		 <div class="row" ng-show="libre">
 					    <div class="small-8 push-1">
 					      <div class="row">
 					        <div class="small-3 columns">
@@ -112,7 +105,7 @@
 			  		</div>
 			  <div class="row">
 				  <div class="small-3 push-8 columns">
-				  	<a href="" ng-click="addMessage()" class="button">Enviar</a>
+				  	<button ng-click="addMessage()" class="button" ng-disabled="altaForm.$invalid">Enviar</button>
 				  </div>
 				  <div class="small-7 pull-3 columns"></div>
 			</div>
