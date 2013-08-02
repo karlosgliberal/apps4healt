@@ -288,6 +288,7 @@ span.error, small.error {
     padding: 0.375em 0.7em;
 }
 
-#proyecto-seccion .faq p {
-margin-bottom: 0.3em;
+#proyecto-seccion p.pregunta {
+    margin-bottom: 0.4em;
+
 }
