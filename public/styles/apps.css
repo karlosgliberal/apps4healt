@@ -287,3 +287,12 @@ span.error, small.error {
     margin-top: -1.3125em;
     padding: 0.375em 0.7em;
 }
+
+#proyecto-seccion p.pregunta {
+    margin-bottom: 0.4em;
+
+}
+
+input[type="text"][disabled] {
+	background-color: #F3F3F3;
+}
