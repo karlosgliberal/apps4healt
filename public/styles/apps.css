@@ -296,3 +296,9 @@ span.error, small.error {
 input[type="text"][disabled] {
 	background-color: #F3F3F3;
 }
+
+
+#proyecto-seccion h4 {
+color: #009FD9;
+padding-left: 12px;
+}
