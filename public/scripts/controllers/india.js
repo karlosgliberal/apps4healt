@@ -1,10 +1,25 @@
 'use strict';
 
 angular.module('apps4healtApp')
-  .controller('IndiaCtrl', function ($scope, $location) {
-  	
- 	$scope.go = function (path) {
-     	$location.path(path);
-  	}
-   
+  .controller('IndiaCtrl', function ($scope, ServicioInscripcion) {
+  	$scope.proyecto = 'India';
+ 		$scope.casa = 'no'; 
+ 		$scope.libre = false;
+		$scope.addMessage = function() {
+			var usuario = {
+      	nombreApellidos: $scope.nombre, 
+      	email: $scope.email,
+      	telefono: $scope.telefono,
+      	alojamiento: $scope.casa,
+      	procedencia: $scope.lugar,
+      	bio: $scope.bio,
+      	proyecto: 'India',
+      	appLibre: ($scope.libre) ? $scope.appLibre : '' 
+    	};
+	    ServicioInscripcion.alta(usuario);
+    	$scope.nombre = "";
+    	$scope.email = "";
+    	$scope.telefono = "";
+    	$scope.bio  = "";   
+  }
 });

@@ -1,13 +1,11 @@
 'use strict';
 
 angular.module('apps4healtApp')
-  .controller('GhanaCtrl', function ($scope, ServicioInscripcion) {
-    
+  .controller('GhanaCtrl', function ($scope, ServicioInscripcion, Correo) {
   	$scope.proyecto = 'Ghana';
  		$scope.casa = 'no'; 
  		$scope.libre = false;
 		$scope.addMessage = function() {
-					console.log($scope.lugar);
 			var usuario = {
       	nombreApellidos: $scope.nombre, 
       	email: $scope.email,
@@ -18,12 +16,16 @@ angular.module('apps4healtApp')
       	proyecto: 'Ghana',
       	appLibre: ($scope.libre) ? $scope.appLibre : '' 
     	};
-
 	    ServicioInscripcion.alta(usuario);
-  		
+
+	    Correo.enviar(usuario, function (data){
+	    	console.log(data);
+	    });
+	    /*
     	$scope.nombre = "";
     	$scope.email = "";
     	$scope.telefono = "";
     	$scope.bio  = "";   
+    	*/
   }
 });

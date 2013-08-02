@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('apps4healtApp', ['firebase', 'ngGrid', 'inscripcion', 'footer', 'angular-flash.flash-alert-directive', 'FireServices'])
+angular.module('apps4healtApp', ['firebase', 'ngGrid', 'inscripcion', 'footer', 'angular-flash.flash-alert-directive', 'FireServices', 'EnvioCorreoService'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {

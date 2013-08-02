@@ -1,24 +1,21 @@
-
 {
   "name": "rfid-atea",
   "description": "RFID Atea",
-
   "version": "0.0.1",
   "homepage": "https://github.com/oierbravo/ikastrola-atea",
-
   "repository": {
-    "type": "git", 
+    "type": "git",
     "url": "git@github.com:oierbravo/ikastrola-atea.git"
   },
   "author": {
-    "name": "Oier Bravo Urtasun", 
-    "url": "", 
+    "name": "Oier Bravo Urtasun",
+    "url": "",
     "email": "oierbravo@gmail.com"
   },
   "dependencies": {
-    "nedb": "*",
-    "express":"*"
+    "ejs": "*",
+    "express": "*",
+    "nodemailer": "~0.5.2"
   },
-  "keywords": [
-  ]
+  "keywords": []
 }
