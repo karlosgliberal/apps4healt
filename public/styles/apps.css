@@ -273,31 +273,14 @@ font-family: "Arial",sans-serif;
 }
 
 
-.a1error {
-
-}
-
-.error input, 
-.error textarea, 
-.error select,
-.ierror input, 
-.ierror textarea, 
-.ierror select
-
- {
-    background: none;
-    border-color: #007FB3;
-    margin-bottom: 0;
-}
-
 span.error, small.error {
     background: none repeat scroll 0 0 #ccc;
     color: white;
     display: block;
     font-size: 0.75em;
     font-weight: bold;
-    margin-bottom: 2em;
-    margin-top: -1em;
+    margin-bottom: 1em;
+    margin-top: -1.3125em;
     padding: 0.375em 0.7em;
 }
 
