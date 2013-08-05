@@ -1,115 +1,118 @@
 	<form name="altaForm">
 	<div id="inscripcion">
-
-	<div class="largue-11 push-1"><h2>Inscripción</h2></div>
-	<div class="formulario-i">	
-			  <div class="row first">
-			    <div class="small-8 push-1">
-			      <div class="row">
-			        <div class="small-3 columns">
-			          <label for="right-label" class="right">Nombre y apellidos</label>
-			        </div>
-			        <div class="small-9 columns" ng-class="{ierror: altaForm.nombre.$invalid}">
-			          <input type="text" name="nombre" ng-model="nombre" placeholder="Nombre y apellidos" required>
-			          <small class="error" ng-show="altaForm.nombre.$error.required">Requerido</small>
-			        </div>
-			      </div>
-			    </div>
-			</div>
-			 <div class="row">
-			    <div class="small-8 push-1">
-			      <div class="row">
-			        <div class="small-3 columns">
-			          <label for="right-label" class="right">E-mail</label>
-			        </div>
-			        <div class="small-9 columns" ng-class="{ierror: altaForm.email.$invalid}">
-			          <input type="email" name="email" ng-model="email" placeholder="e-mail" required>
-			         <small class="error"ng-show="altaForm.email.$error.required">Requerido</small>
-			         <small class="error" ng-show="altaForm.email.$error.email">No es un correo valido</small>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="row">
-			    <div class="small-8 push-1">
-			      <div class="row">
-			        <div class="small-3 columns">
-			          <label for="right-label" class="right">Tlf</label>
-			        </div>
-			        <div class="small-9 columns" ng-class="{ierror: altaForm.telefono.$invalid}">
-			          <input type="text" id="right-label" name="telefono" ng-model="telefono" placeholder="Télefono" required>
-			          <small class="error" ng-show="altaForm.telefono.$error.required">Requerido</small>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-			<div class="row">
-				<div class="small-8 push-1">
-				  <div class="small-3 columns">
-			          <label for="right-label" class="right">Necesitas alojamiento?</label>
-			     </div>
-			     <div class="small-9 columns" >
-			         <label for="radio1"><input name="casa" type="radio" CHECKED ng-model="casa" value="si"><span class="custom radio checked"></span> Sí</label>
-	     				 <label for="radio1"><input name="casa" type="radio" ng-model="casa" value="no"><span class="custom radio"></span> No</label>
-			  </div>
-			  </div>
-			</div>
-			<div class="row">
-			    <div class="small-8 push-1">
-			      <div class="row">
-			        <div class="small-3 columns">
-			          <label for="right-label" class="right">Si vienes de fuera de Bilbao, de Donde?</label>
-			        </div>
-			        <div class="small-9 columns" ng-class="{ierror: altaForm.lugar.$invalid}">
-			          <input type="text" id="right-label" name="lugar" ng-model="lugar" placeholder="Procedencia" required>
-			          <small class="error" ng-show="altaForm.lugar.$error.required">Requerido</small>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-
-			 <div class="row">
-			    <div class="small-8 push-1">
-			      <div class="row">
-			        <div class="small-3 columns">
-			          <label for="right-label" class="right">Bio</label>
-			        </div>
-			        <div class="small-9 columns">
-			          <textarea ng-model="bio" placeholder="Una breve bio sobre tí"></textarea>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-			   <div class="row">
-			    <div class="small-8 push-1">
-			      <div class="row">
-			        <div class="small-3 columns">
-			          <label for="right-label" class="right">Proyecto</label>
-			        </div>
-			        <div class="small-9 columns">
-				        <input type="text" id="right-label" ng-model="proyecto" placeholder="{{proyecto}}" disabled>	
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-			  		 <div class="row" ng-show="libre">
-					    <div class="small-8 push-1">
-					      <div class="row">
-					        <div class="small-3 columns">
-					          <label for="right-label" class="right">App libre</label>
-					        </div>
-					        <div class="small-9 columns">
-					          <textarea ng-model="appLibre" placeholder="Si vas a presentar una App libre pon una breve descripción sobre ella"></textarea>
-					        </div>
-					      </div>
-					    </div>
-			  		</div>
-			  <div class="row">
-				  <div class="small-3 push-8 columns">
-				  	<button ng-click="addMessage()" class="button" ng-disabled="altaForm.$invalid">Enviar</button>
-				  </div>
-				  <div class="small-7 pull-3 columns"></div>
-			</div>
+	<div class="row">	
+		<div class="largue-12 columns"><h2>Inscripción</h2></div>
 	</div>
+	<div class="row">	
+		<div class="formulario-i">	
+				  <div class="row first">
+				    <div class="small-8 push-1">
+				      <div class="row">
+				        <div class="small-3 columns">
+				          <label for="right-label" class="right">Nombre y apellidos</label>
+				        </div>
+				        <div class="small-9 columns" ng-class="{ierror: altaForm.nombre.$invalid}">
+				          <input type="text" name="nombre" ng-model="nombre" placeholder="Nombre y apellidos" required>
+				          <small class="error" ng-show="altaForm.nombre.$error.required">Requerido</small>
+				        </div>
+				      </div>
+				    </div>
+				</div>
+				 <div class="row">
+				    <div class="small-8 push-1">
+				      <div class="row">
+				        <div class="small-3 columns">
+				          <label for="right-label" class="right">E-mail</label>
+				        </div>
+				        <div class="small-9 columns" ng-class="{ierror: altaForm.email.$invalid}">
+				          <input type="email" name="email" ng-model="email" placeholder="e-mail" required>
+				         <small class="error"ng-show="altaForm.email.$error.required">Requerido</small>
+				         <small class="error" ng-show="altaForm.email.$error.email">No es un correo valido</small>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="row">
+				    <div class="small-8 push-1">
+				      <div class="row">
+				        <div class="small-3 columns">
+				          <label for="right-label" class="right">Tlf</label>
+				        </div>
+				        <div class="small-9 columns" ng-class="{ierror: altaForm.telefono.$invalid}">
+				          <input type="text" id="right-label" name="telefono" ng-model="telefono" placeholder="Télefono" required>
+				          <small class="error" ng-show="altaForm.telefono.$error.required">Requerido</small>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				<div class="row">
+					<div class="small-8 push-1">
+					  <div class="small-3 columns">
+				          <label for="right-label" class="right">Necesitas alojamiento?</label>
+				     </div>
+				     <div class="small-9 columns" >
+				         <label for="radio1"><input name="casa" type="radio" CHECKED ng-model="casa" value="si"><span class="custom radio checked"></span> Sí</label>
+		     				 <label for="radio1"><input name="casa" type="radio" ng-model="casa" value="no"><span class="custom radio"></span> No</label>
+				  </div>
+				  </div>
+				</div>
+				<div class="row">
+				    <div class="small-8 push-1">
+				      <div class="row">
+				        <div class="small-3 columns">
+				          <label for="right-label" class="right">Si vienes de fuera de Bilbao, de Donde?</label>
+				        </div>
+				        <div class="small-9 columns" ng-class="{ierror: altaForm.lugar.$invalid}">
+				          <input type="text" id="right-label" name="lugar" ng-model="lugar" placeholder="Procedencia" required>
+				          <small class="error" ng-show="altaForm.lugar.$error.required">Requerido</small>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+
+				 <div class="row">
+				    <div class="small-8 push-1">
+				      <div class="row">
+				        <div class="small-3 columns">
+				          <label for="right-label" class="right">Bio</label>
+				        </div>
+				        <div class="small-9 columns">
+				          <textarea ng-model="bio" placeholder="Una breve bio sobre tí"></textarea>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				   <div class="row">
+				    <div class="small-8 push-1">
+				      <div class="row">
+				        <div class="small-3 columns">
+				          <label for="right-label" class="right">Proyecto</label>
+				        </div>
+				        <div class="small-9 columns">
+					        <input type="text" id="right-label" ng-model="proyecto" placeholder="{{proyecto}}" disabled>	
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				  		 <div class="row" ng-show="libre">
+						    <div class="small-8 push-1">
+						      <div class="row">
+						        <div class="small-3 columns">
+						          <label for="right-label" class="right">App libre</label>
+						        </div>
+						        <div class="small-9 columns">
+						          <textarea ng-model="appLibre" placeholder="Si vas a presentar una App libre pon una breve descripción sobre ella"></textarea>
+						        </div>
+						      </div>
+						    </div>
+				  		</div>
+				  <div class="row">
+					  <div class="small-3 push-8 columns">
+					  	<button ng-click="addMessage()" class="button" ng-disabled="altaForm.$invalid">Enviar</button>
+					  </div>
+					  <div class="small-7 pull-3 columns"></div>
+				</div>
+		</div>
+</div>
 </div>
 </form>
