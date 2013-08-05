@@ -26,11 +26,11 @@ angular.module('apps4healtApp')
           appLibre: ($scope.libre) ? $scope.appLibre : '' 
         };
         ServicioInscripcion.alta(usuario);
+        $scope.showBox();
         Correo.enviar(usuario, function (data){
-          $scope.showBox();
         });
       $scope.nombre = "";
-      $scope.email = "";
+        $scope.email = "";
       $scope.telefono = "";
       $scope.bio  = "";   
   }
