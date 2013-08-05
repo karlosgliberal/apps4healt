@@ -1,10 +1,12 @@
 'use strict';
 angular.module('EnvioCorreoService',[]).
-	factory('Correo', function ($location, $http){
+	factory('Correo', function ($location, $http, $location{
     return {
       enviar: function (usuario){
+            console.log($location.host());
+        var host = $location.host();
         $http({
-            url: 'http://www.apps4health.es/correo',
+            url: host+'/correo',
             method: "POST",
             data: usuario,
             //headers: {'Content-Type': 'application/x-www-form-urlencoded'}
