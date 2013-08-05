@@ -1,6 +1,6 @@
 'use strict';
 angular.module('EnvioCorreoService',[]).
-	factory('Correo', function ($location, $http, $location{
+	factory('Correo', function ($location, $http, $location){
     return {
       enviar: function (usuario){
             console.log($location.host());
