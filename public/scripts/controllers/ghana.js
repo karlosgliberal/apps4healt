@@ -7,9 +7,12 @@ angular.module('apps4healtApp')
  		$scope.libre = false;
 
 	  $scope.movida = function (){
+      ServicioInscripcion.alta({}, {hola:'hola', adios:'adios'});
+      /*
 	    Correo.enviar({id:'hola', data:{texto:'hola', coment:'adios'}}, function(datos){
 	    			console.log(datos);
 	    });
+      */
 	  }
 
 		$scope.addMessage = function() {
@@ -25,9 +28,10 @@ angular.module('apps4healtApp')
     	};
 	    ServicioInscripcion.alta({}, usuario);
 
-	    Correo.enviar(usuario, function (data){
-	    	console.log(data);
-	    });
+      Correo.enviar(usuario, function (a){
+            console.log(a);
+      });
+
 	    /*
     	$scope.nombre = "";
     	$scope.email = "";

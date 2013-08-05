@@ -1,12 +1,18 @@
 'use strict';
-angular.module('EnvioCorreoService',['ngResource']).
-	factory('Correo', function($resource, $location){
-	var Correo = $resource('http://localhost\\:4000/correo/:id',{data:'hola'}, { 
-      	enviar: {
-          method: 'POST',
-          params: {id:'@id'},
-          data:'@data'
-      	}
-    	}); 
-    	return Correo;
+angular.module('EnvioCorreoService',[]).
+	factory('Correo', function ($location, $http){
+    return {
+      enviar: function (usuario){
+        $http({
+            url: 'http://localhost:4000/correo',
+            method: "POST",
+            data: usuario,
+            //headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+        }).success(function (data, status, headers, config) {
+              console.log(data);
+        }).error(function (data, status, headers, config) {
+              console.log(data);
+        });
+      }
+    }
 	}); 
