@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('apps4healtApp')
-  .controller('IndiaCtrl', function ($scope, ServicioInscripcion) {
+  .controller('IndiaCtrl', function ($scope, ServicioInscripcion, Correo) {
   	$scope.proyecto = 'India';
  		$scope.casa = 'no'; 
  		$scope.libre = false;
@@ -17,6 +17,8 @@ angular.module('apps4healtApp')
       	appLibre: ($scope.libre) ? $scope.appLibre : '' 
     	};
 	    ServicioInscripcion.alta(usuario);
+      Correo.enviar(usuario, function (data){
+      });
     	$scope.nombre = "";
     	$scope.email = "";
     	$scope.telefono = "";

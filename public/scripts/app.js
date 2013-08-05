@@ -1,6 +1,7 @@
 'use strict';
 
 angular.module('apps4healtApp', ['firebase', 'ngGrid', 'inscripcion', 'footer', 'angular-flash.flash-alert-directive', 'FireServices', 'EnvioCorreoService'])
+  .value('firebaseUrl', 'https://interzonas.firebaseio.com/altas/')
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
