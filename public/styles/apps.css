@@ -320,3 +320,13 @@ padding-left: 12px;
 	margin-top: 11px;
     padding-right: 26px;
 }
+
+
+input[type="checkbox"] {
+	margin: 0.3em;
+}
+
+.check-acepto {
+	font-size: 0.9em;
+	line-height: 2em;
+}
