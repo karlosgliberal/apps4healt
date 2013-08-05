@@ -399,7 +399,7 @@ letter-spacing: 1px;
 
 #ng-view {
   position:relative;
-  min-height:1500px;
+  min-height:700px;
 }
 
 .fade-hide, .fade-show{
