@@ -122,9 +122,9 @@ text-transform: uppercase;
 
 }
 
-h4.premios {
+/*h4.premios {
 	  margin-bottom: 1.3em;
-}
+}*/
 
 
 .jurado-r {
@@ -315,3 +315,9 @@ padding-left: 12px;
     text-transform: uppercase;
 
 } 
+
+
+.temp {
+	margin-top: 11px;
+    padding-right: 26px;
+}
