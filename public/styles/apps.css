@@ -123,14 +123,7 @@ text-transform: uppercase;
 }
 
 h4.premios {
-	background: url("../img/premio.png") 20% no-repeat;
 	  margin-bottom: 1.3em;
-}
-h4.jurado {
-	background: url("../img/jurado.png") 18% no-repeat;
-}
-h4.donde-cuando {
-	background: url("../img/donde.png") 17% no-repeat;
 }
 
 
@@ -242,7 +235,7 @@ font-family: "Arial", sans-serif;
 }
 
 #inscripcion {
-padding: 70px;
+padding-bottom: 70px;
 }
 
 
@@ -303,4 +296,10 @@ input[type="text"][disabled] {
 #proyecto-seccion h4 {
 color: #009FD9;
 padding-left: 12px;
+}
+
+
+.s-donde{
+	position: relative;
+    top: -2px;
 }
