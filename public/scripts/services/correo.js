@@ -1,12 +1,11 @@
 'use strict';
 angular.module('EnvioCorreoService',['ngResource']).
 	factory('Correo', function($resource, $location){
-	var Correo = $resource('http://localhost\\:4000/correo/:id',{}, { 
+	var Correo = $resource('http://localhost\\:4000/correo/:id',{data:'hola'}, { 
       	enviar: {
           method: 'POST',
-          isArray: true,
           params: {id:'@id'},
-          data:{hola:'hola', adiis:'adios'}
+          data:'@data'
       	}
     	}); 
     	return Correo;

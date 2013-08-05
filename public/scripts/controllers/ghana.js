@@ -7,7 +7,7 @@ angular.module('apps4healtApp')
  		$scope.libre = false;
 
 	  $scope.movida = function (){
-	    Correo.enviar({id:'hola'}, function(datos){
+	    Correo.enviar({id:'hola', data:{texto:'hola', coment:'adios'}}, function(datos){
 	    			console.log(datos);
 	    });
 	  }
