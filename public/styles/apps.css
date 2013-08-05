@@ -69,7 +69,7 @@ font-size: 1.3em;
 	    padding: 65px;
 	    background: url("../img/bg-textura.png");
 }
-#proyecto-seccion, #inscripcion {
+#proyecto-seccion, #inscripcion, #redes {
 	   background: url("../img/bg-textura.png");
 }
 
@@ -303,3 +303,15 @@ padding-left: 12px;
 	position: relative;
     top: -2px;
 }
+
+#redes {
+	padding: 70px;
+}
+
+#redes h4 {
+	color: #009EDC;
+	font-size: 1.9em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+} 
