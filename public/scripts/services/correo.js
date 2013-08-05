@@ -4,7 +4,7 @@ angular.module('EnvioCorreoService',[]).
     return {
       enviar: function (usuario){
         $http({
-            url: 'http://apps4health.es/correo',
+            url: 'http://www.apps4health.es/correo',
             method: "POST",
             data: usuario,
             //headers: {'Content-Type': 'application/x-www-form-urlencoded'}
