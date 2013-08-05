@@ -2881,7 +2881,9 @@ label.error {
           box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white; }
   .top-bar.expanded {
     height: auto;
-    background: transparent; }
+    z-index: 2000;
+     }
+
     .top-bar.expanded .title-area {
       background: #111111; }
     .top-bar.expanded .toggle-topbar a {
@@ -2918,7 +2920,8 @@ label.error {
     padding: 12px 0 12px 0;
     padding-left: 15px;
     font-size: 1em;
-    background: #222222; 
+   /* background: #222222; */
+    background: url("../img/bg-central.png") repeat scroll 0 0 transparent;
     text-transform: uppercase;
     font-family: "league-gothic",serif;
     letter-spacing: 0.11em;
