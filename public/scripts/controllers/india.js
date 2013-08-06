@@ -5,7 +5,7 @@ angular.module('apps4healtApp')
   	$scope.proyecto = 'India';
  		$scope.casa = 'no'; 
  		$scope.libre = false;
-
+    $scope.hidden = true;
 
     $scope.showBox = function (){
       $scope.hidden = false;

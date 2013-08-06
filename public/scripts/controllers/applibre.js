@@ -5,6 +5,7 @@ angular.module('apps4healtApp')
   	$scope.proyecto = 'App Libre';
  		$scope.casa = 'no'; 
  		$scope.libre = true;
+    $scope.hidden = true; 
 
     $scope.showBox = function (){
       $scope.hidden = false;
