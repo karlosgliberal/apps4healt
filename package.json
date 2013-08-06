@@ -15,7 +15,9 @@
   "dependencies": {
     "ejs": "*",
     "express": "*",
-    "nodemailer": "~0.5.2"
+    "nodemailer": "~0.5.2",
+    "firebase": "~0.6.1",
+    "firebase-token-generator": "~0.1.2"
   },
   "keywords": []
 }
