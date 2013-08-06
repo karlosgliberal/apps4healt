@@ -418,10 +418,17 @@ letter-spacing: 1px;
     top: 40px;
 }
 
- input[type="checkbox"][required] {
-  color: purple;
- }
+#colaboradores a:hover {
+  opacity: 0.6;
+}
 
+.libre {
+  font-size: 1.3em;
+  color: #444444;
+  margin-bottom: 0.2em;
+}
 
-
+.app-libre {
+padding: 35px 0;
+}
 
