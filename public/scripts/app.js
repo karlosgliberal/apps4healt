@@ -52,6 +52,10 @@ angular.module('apps4healtApp', ['firebase', 'ngGrid', 'inscripcion', 'footer', 
         templateUrl: 'views/privacidad.html',
         controller: 'MainCtrl'
       })
+      .when('/contacta', {
+        templateUrl: 'views/privacidad.html',
+        controller: 'MainCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
