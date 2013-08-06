@@ -6,6 +6,8 @@ angular.module('apps4healtApp')
  		$scope.casa = 'no'; 
  		$scope.libre = false;
     $scope.hidden = true;
+    $scope.acepto = false;
+        console.log($scope.acepto);
 
     $scope.showBox = function (){
       $scope.hidden = false;
