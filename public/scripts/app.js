@@ -53,7 +53,7 @@ angular.module('apps4healtApp', ['firebase', 'ngGrid', 'inscripcion', 'footer', 
         controller: 'MainCtrl'
       })
       .when('/contacta', {
-        templateUrl: 'views/privacidad.html',
+        templateUrl: 'views/contacta.html',
         controller: 'MainCtrl'
       })
       .otherwise({
