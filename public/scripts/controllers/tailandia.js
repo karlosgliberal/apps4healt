@@ -22,7 +22,8 @@ angular.module('apps4healtApp')
         procedencia: $scope.lugar,
         bio: $scope.bio,
         proyecto: 'Tailandia',
-        appLibre: ($scope.libre) ? $scope.appLibre : '' 
+        appLibre: ($scope.libre) ? $scope.appLibre : '',
+        informacion: $scope.informacion
       };
       ServicioInscripcion.alta(usuario);
       $scope.showBox();
