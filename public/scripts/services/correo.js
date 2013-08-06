@@ -5,8 +5,7 @@ angular.module('EnvioCorreoService', []).
     return {
       enviar: function (usuario) {
         $http({
-          //url: 'http://' + $location.host() + '/correo',
-          url: 'http://localhost:4000/correo',
+          url: 'http://' + $location.host() + '/correo',
           method: "POST",
           data: usuario
         }).success(function (data, status, headers, config) {
