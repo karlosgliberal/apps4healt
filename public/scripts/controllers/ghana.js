@@ -1,41 +1,38 @@
+/*global angular*/
 'use strict';
 
 angular.module('apps4healtApp')
   .controller('GhanaCtrl', function ($scope, ServicioInscripcion, Correo, $timeout) {
-  	$scope.proyecto = 'Ghana';
- 		$scope.casa = 'no'; 
- 		$scope.libre = false;
+    $scope.proyecto = 'Ghana';
+    $scope.casa = 'no';
+    $scope.libre = false;
     $scope.hidden = true;
     $scope.acepto = false;
-        console.log($scope.acepto);
-
-    $scope.showBox = function (){
+    $scope.showBox = function () {
       $scope.hidden = false;
-      $timeout(function() {
-        $scope.hidden =true;
-      }, 3000)
-    }
-
-    $scope.addMessage = function() {
-          console.log();
+      $timeout(function () {
+        $scope.hidden = true;
+      }, 3000);
+    };
+    $scope.addMessage = function () {
       var usuario = {
-          nombreApellidos: $scope.nombre, 
-          email: $scope.email,
-          telefono: $scope.telefono,
-          alojamiento: $scope.casa,
-          procedencia: $scope.lugar,
-          bio: $scope.bio,
-          proyecto: 'Ghana',
-          appLibre: ($scope.libre) ? $scope.appLibre : '',
-          informacion: $scope.informacion
+          nombreApellidos: $scope.nombre,
+          email : $scope.email,
+          telefono : $scope.telefono,
+          alojamiento : $scope.casa,
+          procedencia : $scope.lugar,
+          bio : $scope.bio,
+          proyecto : 'Ghana',
+          appLibre : ($scope.libre) ? $scope.appLibre : '',
+          informacion : $scope.informacion
         };
-        ServicioInscripcion.alta(usuario);
-        $scope.showBox();
-        Correo.enviar(usuario, function (data){
-        });
+      ServicioInscripcion.alta(usuario);
+      $scope.showBox();
+      Correo.enviar(usuario, function (data) {
+      });
       $scope.nombre = "";
-        $scope.email = "";
+      $scope.email = "";
       $scope.telefono = "";
-      $scope.bio  = "";   
-  }
-});
+      $scope.bio = "";
+    };
+  });
