@@ -15,6 +15,7 @@ angular.module('apps4healtApp')
     }
 
     $scope.addMessage = function() {
+          console.log();
       var usuario = {
           nombreApellidos: $scope.nombre, 
           email: $scope.email,
@@ -23,7 +24,8 @@ angular.module('apps4healtApp')
           procedencia: $scope.lugar,
           bio: $scope.bio,
           proyecto: 'Ghana',
-          appLibre: ($scope.libre) ? $scope.appLibre : '' 
+          appLibre: ($scope.libre) ? $scope.appLibre : '',
+          informacion: $scope.informacion
         };
         ServicioInscripcion.alta(usuario);
         $scope.showBox();

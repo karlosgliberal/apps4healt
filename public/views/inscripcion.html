@@ -124,9 +124,12 @@
 				  				<div class="row">	
 				  					<div class="small-3 columns"> </div>
 				  					<div class="small-9 columns">
-							  			 <input type="checkbox" name="Confirmacion" value="Si"><span class="check-acepto">Quiero recibir información de futuras acciones que Anesvad lleve a cabo.</span>
+							  			 <input type="checkbox" name="Confirmacion" value="Si" ng-model="informacion"><span class="check-acepto">Quiero recibir información de futuras acciones que Anesvad lleve a cabo.</span>
 							  			 <br>
-										<input type="checkbox" name="Condiciones" value="Acepto"><a href="/#privacidad.html" target="_blank"><span class="check-acepto">Acepto las condiciones de uso</a></span>
+							  		<span ng-class="{ierror: altaForm.acepto.$invalid}">
+											<input type="checkbox" name="Condiciones" value="Acepto" ng-model="acepto" required><a href="#/privacidad" target="_blank" required><span class="check-acepto">Acepto las condiciones de uso</a></span>
+				 					    <small class="error" ng-show="altaForm.acepto.$error.required">Requerido</small>
+							  		</span>
   									</div>
   								</div>
   							</div>
