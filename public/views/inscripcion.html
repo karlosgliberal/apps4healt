@@ -121,19 +121,19 @@
 
 				  		<div class="row">
 				  			<div class="small-8 push-1">
-				  				<div class="small-3 columns"> </div>
-				  				<div class="small-9 columns">
-							  			 <input type="checkbox" name="Confirmacion" value="Si" ng-model="informacion">
-							  			 <span class="check-acepto">Quiero recibir información de futuras acciones que Anesvad lleve a cabo.</span>
+				  				<div class="row">	
+				  					<div class="small-3 columns"> </div>
+				  					<div class="small-9 columns">
+							  			 <input type="checkbox" name="Confirmacion" value="Si" ng-model="informacion"><span class="check-acepto">Quiero recibir información de futuras acciones que Anesvad lleve a cabo.</span>
 							  			 <br>
-											 <input type="checkbox" name="Condiciones" ng-model="acepto">
-											 <a href="#/privacidad" target="_blank" required>
-											 		<span class="check-acepto">Acepto las condiciones de uso</a>
-											 </span>
-							  	</div>
-					  		</div>
-				  		</div>
-
+							  		<span ng-class="{ierror: altaForm.acepto.$invalid}">
+											<input type="checkbox" name="Condiciones" value="Acepto" ng-model="acepto" required><a href="#/privacidad" target="_blank" required><span class="check-acepto">Acepto las condiciones de uso</a></span>
+				 					    <small class="error" ng-show="altaForm.acepto.$error.required">Requerido</small>
+							  		</span>
+  									</div>
+  								</div>
+  							</div>
+				  	</div>
 				  <div class="row">
 					  <div class="small-3 push-8 columns">
 					  	<button ng-click="addMessage()" class="button" ng-disabled="altaForm.$invalid">Enviar</button>
