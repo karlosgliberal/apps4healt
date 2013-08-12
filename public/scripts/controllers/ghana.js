@@ -24,7 +24,7 @@ angular.module('apps4healtApp')
           bio : $scope.bio,
           proyecto : 'Ghana',
           appLibre : ($scope.libre) ? $scope.appLibre : '',
-          informacion : $scope.informacion
+          informacion : ($scope.informacion) ? $scope.informacion : ''
         };
       ServicioInscripcion.alta(usuario);
       $scope.showBox();

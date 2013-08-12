@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('apps4healtApp')
-  .controller('PeruCtrl', function ($scope, ServicioInscripcion, Correo) {
+  .controller('PeruCtrl', function ($scope, ServicioInscripcion, Correo, $timeout) {
   	$scope.proyecto = 'Perú';
  		$scope.casa = 'no'; 
  		$scope.libre = false;
@@ -24,7 +24,7 @@ angular.module('apps4healtApp')
         bio: $scope.bio,
         proyecto: 'Peru',
         appLibre: ($scope.libre) ? $scope.appLibre : '',
-        informacion: $scope.informacion
+        informacion : ($scope.informacion) ? $scope.informacion : ''
       };
       ServicioInscripcion.alta(usuario);
       $scope.showBox();
