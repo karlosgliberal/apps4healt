@@ -21,7 +21,7 @@ angular.module('apps4healtApp')
         telefono: $scope.telefono,
         alojamiento: $scope.casa,
         procedencia: $scope.lugar,
-        bio: $scope.bio,
+        bio: ($scope.bio) ? $scope.bio : '',
         proyecto: 'App Libre',
         appLibre: ($scope.libre) ? $scope.appLibre : '',
         informacion : ($scope.informacion) ? $scope.informacion : ''
