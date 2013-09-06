@@ -64,6 +64,13 @@
 	background-color: #000;
 }
 
+/*#apps4health-intro a {
+    color: #444;
+    line-height: inherit;
+    text-decoration: underline;
+}*/
+
+
 h1.hackathon {
 text-align: center;
 font-size: 4em;
@@ -183,10 +190,6 @@ text-transform: uppercase;
 	padding: 65px;
 
 }
-
-/*h4.premios {
-	  margin-bottom: 1.3em;
-}*/
 
 
 .jurado-r {
