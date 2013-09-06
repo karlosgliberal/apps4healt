@@ -107,9 +107,20 @@ h3.subheader {
 	font-size: 2em;
 }
 
+
+h4 {
+    color: #0085B2;
+    font-size: 1.4375em;
+}
+
+
+#apps4health-intro h4 {
+   font-size: 1.8em;
+    text-align: center;
+}
+
 .presentacion {
 text-align: center;
-font-style: italic;
 font-weight: 500;
 color: #444444;
 font-size: 1.3em;
@@ -403,7 +414,7 @@ letter-spacing: 1px;
 }
 
 .logos {
-	padding-top: 20px;
+	padding-top: 33px;
 }
 .logo-organiza li {
 	display: inline;
