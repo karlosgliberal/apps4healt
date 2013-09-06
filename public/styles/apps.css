@@ -465,7 +465,8 @@ padding: 35px 0;
   padding: 20px;
 }
 
-
-.t-alojamiento {
+p#t-alojamiento {
   font-size: 1em;
+  color: #ccc;
 }
+
