@@ -444,3 +444,25 @@ letter-spacing: 1px;
 padding: 35px 0;
 }
 
+.app-texto {
+    background-color: #fff;
+    font-size: 0.9em;
+    margin-top: 40px;
+
+}
+
+
+#proyecto-seccion h4.app {
+  background-color: #009FD9;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.a-texto {
+  padding: 20px;
+}
+
+
+.t-alojamiento {
+  font-size: 1em;
+}
