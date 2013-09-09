@@ -470,3 +470,15 @@ p#t-alojamiento {
   color: #ccc;
 }
 
+.premio-badge {
+    height: 51px;
+    margin: 0 auto;
+    position: relative;
+    top: -56px;
+    width: 300px;
+}
+
+#premios  {
+/*  border-bottom: 1px solid #0081B5;*/
+  background: url("../img/bg-textura2.png") center repeat;
+}
