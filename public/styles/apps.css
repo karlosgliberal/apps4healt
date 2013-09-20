@@ -481,11 +481,17 @@ p#t-alojamiento {
 
 #premios  {
   background: url("../img/bg-textura2.png") center repeat;
+  padding-bottom: 42px;
 }
 
+.reglas {
+  margin: 0 auto;
+  text-align: center;
+}
 
-
-
+#como-llegar a {
+  padding-left: 15px;
+}
 
 
 
